@@ -26,6 +26,8 @@
 
 \documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
 
+\usepackage[UTF8]{ctex} % Chinese support
+
 \input{structure.tex} % Include the file that specifies the document structure
 
 % Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
@@ -39,149 +41,35 @@
 \begin{paracol}{2} % Begin the multi-column environment
 
 %----------------------------------------------------------------------------------------
-%	NAME AND CURRICULUM VITAE TEXT
+%	NAME AND BASIC INFO
 %----------------------------------------------------------------------------------------
 
 \parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\centering % Centre text
-	{\sffamily\Huge Dr. Gordon Freeman}\\\medskip % Your name
-	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+	{\sffamily\Huge 冯运}\\
+	\vspace{0.04\textheight}
+	\begin{tabular}{ccc}
+		\textbf{应聘岗位} & \textbf{本科院校}　& \textbf{毕业时间}\\
+		\hline
+		Web 前端 & 哈尔滨工业大学\,计算机学院 　& 2020.07\\
+	\end{tabular}
 }
 
 %----------------------------------------------------------------------------------------
 %	MAJOR RESEARCH PROJECT
 %----------------------------------------------------------------------------------------
 
-\section{Doctoral Research}
+\section{个人简介}
 
-{\raggedright\textbf{``Observation of Einstein-Podolsky-Rosen Entanglement on Supraquantum Structures by Induction Through Nonlinear Transuranic Crystal of Extremely Long Wavelength Pulse from Mode-Locked Source Array"}\\\medskip}
-
-My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
-
+本科就读于哈尔滨工业大学计算机科学与技术学院，已于2020年7月毕业。原本计划去美国继续研究生学业，但是由于疫情原因无法前往，我打算先工作来积累工作经验。我喜欢编程，擅长动手实践，大学的大部分业余时间都用来完成自己的项目，参加竞赛以及在实验室参与研究。在本科课程学习中，我自己动手实现了一个基于哈夫曼编码的文件压缩工具，基于Verilog的五级流水线Y86指令集和基于滑动窗口的可靠传输协议等。在实验室的研究经历也有不少收获，目前还有一篇关于图数据库的一作论文已被NDBC(2020)会议收录。
 \medskip % Extra whitespace before the next section
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Work Experience}
-
-% Blank \workposition command to add another job:
-
-%\workposition{} % Duration
-%{} % FT/PT (full time or part time)
-%{} % Employer
-%{} % Job title
-%{} % Description
-
-% All 5 parameters must be supplied but any can be empty if you don't need them
-
-%------------------------------------------------
-
-\workposition{Current, from Jan 1995} % Duration
-{FT} % FT/PT (full time or part time)
-{Black Mesa Research Facility} % Employer
-{Team Leader (Anomalous Materials)} % Job title
-{As part of this promotion, I began conducting nuclear and subatomic research in the Anomalous Materials department. My team and I are particularly interested in dimensionality and its interaction with spacetime. The focus is on practical outcomes and applications in teleportation and communication with distal locations.} % Description
-
-%------------------------------------------------
-
-\workposition{Feb 1991 -- Jan 1995} % Duration
-{FT} % FT/PT (full time or part time)
-{Black Mesa Research Facility} % Employer
-{Level 3 Research Associate} % Job title
-{This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.}  % Description
-
-%------------------------------------------------
-
-\workposition{Jul 1982 -- Dec 1984} % Duration
-{PT} % FT/PT (full time or part time)
-{WashPests Limited} % Employer
-{Pest Control Technician} % Job title
-{In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
-
-%------------------------------------------------
-
-\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
-
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
-
-\section{References}
-
-%\textit{References available on request}
-
-%------------------------------------------------
-
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-%------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Isaac Kleiner}}{spaceafter}
-	\tableentry{Position}{Professor}{}
-	\tableentry{Employer}{\href{http://web.mit.edu/physics/}{Department of Physics}}{}
-	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
-	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
-	\tableentry{Mobile}{+1 (232) 842-3583}{}
-	
-	%------------------------------------------------
-	
-	\tableentry{}{}{} % Creates some additional whitespace between the references
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
-	\tableentry{Position}{Scientist (HL1)}{}
-	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
-	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
-	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
-	\tableentry{Mobile}{+1 (201) 632-3901}{}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-\medskip % Extra whitespace before the next section
-
-%----------------------------------------------------------------------------------------
-
-\switchcolumn % Switch to the next paracol column
-
-%----------------------------------------------------------------------------------------
-%	COLOURED CONTACT DETAILS BOX
-%----------------------------------------------------------------------------------------
-
-\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
-	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
-	\colorbox{shade}{ % Create the coloured box
-		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-			\raisebox{-1pt}{\faHome} & P.O. Box 3985, Black Mesa Drive, NM 87545 \\ % Address
-			\raisebox{-1pt}{\faPhone} & +1 (800) 786-1410 \\ % Phone number
-			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:g.freeman@bmrf.us}{g.freeman@bmrf.us} \\ % Email address
-			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
-			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
-			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
-			% See fontawesome.pdf in the fonts folder for all icons you can use
-		\end{supertabular}
-	}
-}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
-\section{Education} 
+\section{教育经历} 
 
 % Blank \educationentry{} command to add another degree:
 
@@ -199,27 +87,11 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 
 	%------------------------------------------------
 	
-	\educationentry{1986 -- 1990} % Duration
-	{Doctor of Philosophy} % Degree
+	\educationentry{2016年8月 -- 2020年7月} % Duration
+	{工学学士} % Degree
 	{} % Honours, achievements or distinctions (e.g. first class honours)
-	{Theoretical Physics} % Department
-	{Massachusetts Institute of Technology} % Institution
-	
-	%------------------------------------------------
-	
-	\educationentry{1985} % Duration
-	{Master of Science} % Degree
-	{First Class Honours} % Honours, achievements or distinctions (e.g. first class honours)
-	{Theoretical Physics} % Department
-	{Massachusetts Institute of Technology} % Institution
-	
-	%------------------------------------------------
-	
-	\educationentry{1982 -- 1984} % Duration
-	{Bachelor of Physics} % Degree
-	{} % Honours, achievements or distinctions (e.g. first class honours)
-	{Department of Physics} % Department
-	{The University of Washington} % Institution
+	{计算机科学与技术专业} % Department
+	{哈尔滨工业大学} % Institution
 	
 	%------------------------------------------------
 
@@ -229,7 +101,7 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %	AWARDS
 %----------------------------------------------------------------------------------------
 
-\section{Awards}
+\section{获奖情况}
 
 % Example \tableentry{} command to add another line:
 
@@ -244,15 +116,20 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	
 	%------------------------------------------------
 	
-	\tableentry{1985}{\textbf{Faculty of Science Masters Scholarship}}{}
-	\tableentry{}{\textit{Massachusetts Institute of Technology}}{spaceafter}
+	\tableentry{2019年7月}{\textbf{2019微信小程序应用开发赛全国三等奖}}{spaceafter}
+	\tableentry{}{\textit{微信小程序大赛组委会}}{spaceafter}
 	
 	%------------------------------------------------
-	
-	\tableentry{1983}{\textbf{Top Achiever Award -- Physics}}{}
-	\tableentry{}{\textit{The University of Washington}}{spaceafter}
+
+	\tableentry{2019年3月}{\small\textbf{第十届蓝桥杯大赛javaA组黑龙江赛区二等奖}}{spaceafter}
+	\tableentry{}{\textit{蓝桥杯大赛组委会}}{spaceafter}
 	
 	%------------------------------------------------
+
+	% \tableentry{2018年12月}{\small\textbf{全国大学生数学建模竞赛黑龙江赛区一等奖}}{spaceafter}
+	% \tableentry{}{\textit{黑龙江赛区组委会}}{spaceafter}
+	
+	% %------------------------------------------------
 	
 \end{supertabular}
 
@@ -260,7 +137,7 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Computer Skills} 
+\section{技术能力} 
 
 % Example \tableentry{} command to add another line:
 
@@ -275,17 +152,14 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	
 	%------------------------------------------------
 	
-	\tableentry{Beginner}{Java, MS DOS}{spaceafter}
+	\tableentry{熟练}{web前端基础}{spaceafter}
+	\tableentry{}{Vue框架}{spaceafter}
+	\tableentry{}{前端工程化有较多实践}{spaceafter}	
 	
 	%------------------------------------------------
 	
-	\tableentry{Intermediate}{Javascript, Python, HTML, CSS,}{}
-	\tableentry{}{Microsoft Windows}{}
-	\tableentry{}{Computer Hardware \& Support}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
+	\tableentry{熟悉}{java}{spaceafter}	
+	\tableentry{}{Linux系统}{spaceafter}
 	
 	%------------------------------------------------
 	
@@ -295,7 +169,7 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %	COMMUNICATION SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills}
+\section{语言能力}
 
 % Example \tableentry{} command to add another line:
 
@@ -310,90 +184,87 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	
 	%------------------------------------------------
 	
-	\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
-	\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
+	\tableentry{CET-6}{539分}{}
 	
 	%------------------------------------------------
 	
-	\tableentry{Posters}{Poster at the Meeting of the American}{}
-	\tableentry{}{Physical Society -- 1985}{spaceafter}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS DESCRIPTION
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
-
-% Example \longformdescription{} command to add another section:
-
-%\longformdescription{Heading}{Description}
-
-%------------------------------------------------
-
-\longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
-
-\longformdescription{Physical Dexterity}{Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.}
-
-\longformdescription{Passionate}{I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-\section{Publications}
-
-% Example \longformdescription{} command to add another publication:
-
-%\longformpublication{Reference (format this manually as desired)}
-
-%------------------------------------------------
-
-\longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
-
-\longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
-
-%------------------------------------------------
-
-% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
-
-% Example \doipublication{} command to add another publication:
-
-%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
-
-% All four parameters are required (can be empty though)
-% A value of "firstauthor" in the third parameter will print the DOI in bold
-% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
-
-%------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
-	\doipublication{1986}{10.1139/v86-297}{}{}
-	
-	%------------------------------------------------
-	
-	\doipublication{1986}{10.1103/PhysRevA.34.2329}{}{spaceafter}
-	
-	%------------------------------------------------
-	
-	& \textit{First author publications in} \textbf{bold}\\
+	\tableentry{托福}{102分}{}
 	
 	%------------------------------------------------
 	
 \end{supertabular}
 
-\medskip % Extra whitespace before the next section
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & \small{山西省吕梁市离石区团结路195号} \\ % Home address			
+			\raisebox{-1pt}{\faPhone} & +86 16601210817 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:fengyun5264@outlook.com}{fengyun5264@outlook.com} \\ % Email address
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/Mark-Fenng}{https://github.com/Mark-Fenng} \\ % GitHub profile
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{项目经历}
+
+% Blank \projectentry command to add another project:
+
+%------------------------------------------------
+% Project 1
+{\large{\textbf{侧边翻译}}} \hfill \textsc{2018年7月 -- 至今} % Project name and duration
+	\begin{itemize}
+		\item \textbf{项目主页：}\href{https://github.com/EdgeTranslate/EdgeTranslate}{\small{https://github.com/EdgeTranslate/EdgeTranslate}} % Project home page
+		\item \textbf{项目简介：}{这是我与室友合作的一个\textbf{浏览器翻译扩展}项目，它提供便捷高效的网页和PDF翻译功能。这个项目一发布就在Github上开源，到目前为止已经拥有了\textbf{100K+}的周活用户，
+		在Github上获得了\textbf{736个}Star，在Chrome、Firefox和Edge上均获得\textbf{4.7分（满分5分）}以上的评分。} % Project description
+		\item \textbf{主要职责：}{参与了扩展从一个想法到成熟软件的全过程，包括功能的讨论、交互方式设计、页面样式设计、功能实现、发布和推广等。在代码上，我实现了翻译结果的展示模块，划词翻译的功能，右上角弹出框和扩展设置页面等部分，同事也负责扩展的长期维护工作。} % Duty in the project
+		\item \textbf{项目优点：}{
+			\begin{itemize}
+			\item 功能实用，用户量增长迅速，广受好评，长期维护；
+			\item 从零开始自己动手搭建了完善的开发环境，通过简单的命令就能完成开发，打包到不同浏览器的工作，包括热更新和单元测试环境；
+			\item 自己实现了一个能拖动和调整元素大小的库
+			\item 自己实现了一个轻量的模板引擎，用于渲染翻译结果页面
+			\item 完善的文档，大量代码注释，详尽的release发布记录
+		\end{itemize}} % Project highlights
+	\end{itemize}
+
+%------------------------------------------------
+
+% \projectentry
+% {VScript}
+% {2020年1月 -- 至今}
+% {https://github.com/nickyc975/VScript}
+% {https://github.com/nickyc975/VScript}
+% {这个项目是在编译原理课设的基础上实现的一门简单的\textbf{动态强类型编程语言}。在语法上，它类似于\textbf{JavaScript}，
+% 而在执行机制上类似于\textbf{Python}。输入的源程序首先被编译为类似于\textbf{Python字节码}的指令序列，然后直接交由
+% 一个简单的\textbf{基于栈的虚拟机}来执行。目前已经实现的功能包括：\textbf{输入输出}、\textbf{函数调用和递归}、
+% \textbf{函数闭包}、\textbf{内置类型转换}、\textbf{简单的引用计数垃圾回收（未考虑循环引用）}等。} % Description
+% {这个项目是一个完全的个人项目，所有部分均为我独自实现。} % Duty
+
+%------------------------------------------------
+
+% \projectentry
+% {My Pregel}
+% {2019年6月}
+% {https://github.com/nickyc975/Pregel}
+% {https://github.com/nickyc975/Pregel}
+% {这个项目是数据挖掘课程的课设。\textbf{Pregel}是Google提出的一个\textbf{分布式并行图计算系统}，其核心是
+% \textbf{基于BSP模型的分布式计算框架}，更详细的信息可以参考这篇论文：\href{https://www.cs.cmu.edu/~pavlo/courses/fall2013/static/papers/p135-malewicz.pdf}{Pregel: a system for large-scale graph processing}。
+% 本项目是Pregel计算模型的单机版实现，使用了\textbf{多线程}来实现并行计算。实现了\textbf{Combiner}，
+% \textbf{Aggregator}等Pregel核心功能，同时提供了\textbf{函数式API}，使用起来简洁方便。} % Description
+% {这个项目是一个完全的个人项目，所有部分均为我独自实现。} % Duty
 
 %----------------------------------------------------------------------------------------
 

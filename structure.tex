@@ -33,7 +33,7 @@
 
 \geometry{
 	hmargin=1.5cm, % Horizontal margin
-	vmargin=1.75cm, % Vertical margin
+	vmargin=1.5cm, % Vertical margin
 	a4paper, % Paper size, change to letterpaper for US letter size
 	%showframe, % Uncomment to show how the type block is set on the page -- typically for debugging
 }
@@ -44,7 +44,7 @@
 
 \usepackage{paracol} % Required for creating multi-column layouts that can span pages automatically
 
-\columnratio{0.55,0.45} % The relative ratios of the two columns in the CV
+\columnratio{0.5,0.5} % The relative ratios of the two columns in the CV
 
 \setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
 
@@ -121,19 +121,21 @@ SmallCapsFont=*-SC.ttf
 %	CUSTOM COMMANDS
 %----------------------------------------------------------------------------------------
 
-% Command for entering a new work position
-\newcommand{\workposition}[5]{
-	{\raggedleft\textsc{#1\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
-	\expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large #3}\\} % Employer
-	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large\textit{\textbf{#4}}}\\[4pt]} % Job title
-	\expandafter\ifstrequal\expandafter{#5}{}{}{#5\\} % Description
+% Command for entering a new project
+\newcommand{\projectentry}[6]{
+	{\large{\textbf{#1}}} \hfill \textsc{#2} % Project name and duration
+	\begin{itemize}
+		\item \textbf{项目主页：}\href{#3}{#4} % Project home page
+		\item \textbf{项目简介：}{#5} % Project description
+		\item \textbf{主要职责：}{#6} % Duty in the project		
+	\end{itemize}
 }
 
 % Command for entering a separate qualification
 \newcommand{\educationentry}[5]{
 	\textsc{#1} & \textbf{#2}\\ % Duration and degree
 	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\small\textsc{#3}}\\} % Honours, achievements or distinctions (e.g. first class honours)
-	\expandafter\ifstrequal\expandafter{#4}{}{}{& #4\\} % Department
+	\expandafter\ifstrequal\expandafter{#4}{}{}{& \small{#4}\\} % Department
 	\expandafter\ifstrequal\expandafter{#5}{}{}{& \textit{#5}\\[6pt]} % Institution
 }
 
